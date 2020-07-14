@@ -3,11 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:lookingforgroup/models/account.dart';
 
 import '../models/menu.dart';
-import '../utils/utils.dart';
 
-AppBar buildAppBar() {
+AppBar buildAppBar(BuildContext context) {
   return AppBar(
-    backgroundColor: gold,
+    backgroundColor: const Color(0xFFB5A642),
     leading: IconButton(
       icon: const Icon(Icons.menu),
       color: Colors.black,
@@ -36,7 +35,11 @@ AppBar buildAppBar() {
         icon: const Icon(Icons.search),
         color: Colors.black,
         onPressed: () {
-          /// BRING UP SEARCH BAR
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => MyAccountPage(),
+              ));
         },
       ),
     ],

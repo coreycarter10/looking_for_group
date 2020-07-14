@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lookingforgroup/models/account.dart';
 
 import '../models/signup.dart';
+import '../models/palette.dart' as palette;
 import '../widgets/LFGAppBar.dart';
 
 class LoginPage extends StatefulWidget {
@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: buildAppBar(),
+        appBar: buildAppBar(context),
         body: Center(
           child: Padding(
             /// TODO: MAKE RESPONSIVE
@@ -76,7 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => MyAccountPage(),
+                              builder: (context) => SignupPage(),
                             ));
                       },
                     ),

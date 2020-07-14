@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lookingforgroup/utils/utils.dart';
 
 import '../widgets/LFGAppBar.dart';
 
@@ -22,7 +21,7 @@ class _SignupPageState extends State<SignupPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
-      appBar: buildAppBar(),
+      appBar: buildAppBar(context),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.only(left: 250, right: 250),

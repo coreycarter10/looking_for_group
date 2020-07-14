@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lookingforgroup/widgets/LFGAppBar.dart';
 
-import '../utils/utils.dart';
+import '../models/palette.dart' as palette;
 
 class Account {
   String username;
@@ -18,8 +18,8 @@ class _MyAccountPageState extends State<MyAccountPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: brass,
-      appBar: buildAppBar(),
+      backgroundColor: palette.brass,
+      appBar: buildAppBar(context),
       body: Center(
         child: Column(
           children: <Widget>[

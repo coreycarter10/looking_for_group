@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'package:lookingforgroup/models/account.dart';
+
 import '../models/menu.dart';
+import '../utils/utils.dart';
 
 AppBar buildAppBar() {
   return AppBar(
-    backgroundColor: Colors.yellow,
+    backgroundColor: gold,
     leading: IconButton(
       icon: const Icon(Icons.menu),
-      color: Colors.grey,
+      color: Colors.black,
       onPressed: () {
         Menu();
       },
@@ -21,7 +24,7 @@ AppBar buildAppBar() {
             child: Text(
               'Looking For Group',
               style: TextStyle(
-                color: Colors.grey,
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
               ),
@@ -31,7 +34,7 @@ AppBar buildAppBar() {
       ),
       IconButton(
         icon: const Icon(Icons.search),
-        color: Colors.grey,
+        color: Colors.black,
         onPressed: () {
           /// BRING UP SEARCH BAR
         },

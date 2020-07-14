@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lookingforgroup/models/account.dart';
 
 import '../models/signup.dart';
 import '../widgets/LFGAppBar.dart';
@@ -75,7 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SignupPage(),
+                              builder: (context) => MyAccountPage(),
                             ));
                       },
                     ),

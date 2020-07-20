@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/account.dart';
 import '../models/login.dart';
+import '../models/messages.dart';
 import '../models/palette.dart' as palette;
 
 class NavDrawer extends StatelessWidget {
@@ -25,7 +26,11 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.message),
             title: Text('Messages'),
-            onTap: () => {},
+            onTap: () => {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => Messages(),
+              ))
+            },
           ),
           ListTile(
             leading: Icon(Icons.games),

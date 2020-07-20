@@ -35,11 +35,7 @@ AppBar buildAppBar(BuildContext context) {
         icon: const Icon(Icons.search),
         color: Colors.black,
         onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => MyAccountPage(),
-              ));
+          /// IMPLEMENT SEARCH BAR
         },
       ),
     ],

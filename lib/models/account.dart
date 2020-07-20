@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lookingforgroup/widgets/LFGAppBar.dart';
 
+import '../widgets/LFGAppBar.dart';
 import '../models/palette.dart' as palette;
 
 class Account {
@@ -21,28 +21,74 @@ class _MyAccountPageState extends State<MyAccountPage> {
       backgroundColor: palette.brass,
       appBar: buildAppBar(context),
       body: Center(
-        child: Column(
-          children: <Widget>[
-            ButtonBar(
-              children: <Widget>[
-                RaisedButton(
-                  child: Text('Change username'),
-                  color: Colors.black,
-                  onPressed: () {},
+        child: Expanded(
+          child: Column(
+            children: <Widget>[
+              Expanded(
+                child: Card(
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Theme.of(context).primaryColor,
+                            width: 10,
+                          ),
+                        ),
+                      ),
+                      RaisedButton(
+                        child: Text('Change username'),
+                        color: Colors.white,
+                        onPressed: () {},
+                      ),
+                    ],
+                  ),
                 ),
-                RaisedButton(
-                  child: Text('Change email'),
-                  color: Colors.black,
-                  onPressed: () {},
+              ),
+              Expanded(
+                child: Card(
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Theme.of(context).primaryColor,
+                            width: 10,
+                          ),
+                        ),
+                      ),
+                      RaisedButton(
+                        child: Text('Change email'),
+                        color: Colors.white,
+                        onPressed: () {},
+                      ),
+                    ],
+                  ),
                 ),
-                RaisedButton(
-                  child: Text('Change password'),
-                  color: Colors.black,
-                  onPressed: () {},
+              ),
+              Expanded(
+                child: Card(
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Theme.of(context).primaryColor,
+                            width: 10,
+                          ),
+                        ),
+                      ),
+                      RaisedButton(
+                        child: Text('Change password'),
+                        color: Colors.white,
+                        onPressed: () {},
+                      ),
+                    ],
+                  ),
                 ),
-              ],
-            ),
-          ],
+              ),
+            ],
+          ),
         ),
       ),
     );

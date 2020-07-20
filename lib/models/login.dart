@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/signup.dart';
 import '../models/palette.dart' as palette;
 import '../widgets/LFGAppBar.dart';
+import '../widgets/menu.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -34,6 +35,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
       child: Scaffold(
+        drawer: NavDrawer(),
         backgroundColor: Colors.transparent,
         appBar: buildAppBar(context),
         body: Center(

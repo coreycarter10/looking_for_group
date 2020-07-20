@@ -82,6 +82,15 @@ class _SignupPageState extends State<SignupPage> {
                 ),
                 obscureText: true,
               ),
+              RaisedButton(
+                child: Text(
+                  'Create account',
+                  style: TextStyle(color: Colors.grey),
+                ),
+                color: Colors.yellow,
+                elevation: 8.0,
+                onPressed: () {},
+              ),
             ],
           ),
         ),

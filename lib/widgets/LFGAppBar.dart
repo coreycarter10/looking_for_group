@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-import 'package:lookingforgroup/models/account.dart';
-
-import '../models/menu.dart';
+import '../models/account.dart';
+import 'menu.dart';
+import '../models/palette.dart' as palette;
 
 AppBar buildAppBar(BuildContext context) {
   return AppBar(
-    backgroundColor: const Color(0xFFB5A642),
-    leading: IconButton(
-      icon: const Icon(Icons.menu),
-      color: Colors.black,
-      onPressed: () {
-        Menu();
-      },
-    ),
+    backgroundColor: palette.brass,
+//    leading: IconButton(
+//      icon: const Icon(Icons.menu),
+//      color: Colors.black,
+//      onPressed: () {
+//        NavDrawer();
+//      },
+//    ),
     actions: <Widget>[
       Column(
         mainAxisAlignment: MainAxisAlignment.center,

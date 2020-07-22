@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_awesome_buttons/flutter_awesome_buttons.dart';
+
 import '../models/account.dart';
 import '../models/login.dart';
 import '../models/messages.dart';
@@ -33,9 +35,15 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.games),
-            title: Text('Games'),
-            onTap: () => {Navigator.of(context).pop()},
+            leading: RoundedButton(
+              onPressed: () {},
+              title: 'Games',
+              buttonColor: Colors.blueGrey,
+              splashColor: Colors.grey,
+            ),
+//            leading: Icon(Icons.games),
+//            title: Text('Games'),
+//            onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
             leading: Icon(Icons.settings),

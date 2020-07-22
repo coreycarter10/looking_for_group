@@ -40,9 +40,16 @@ class _MyAccountPageState extends State<MyAccountPage> {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text('Username SHOWN'),
+                          Text(
+                            'USERNAME',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           RaisedButton(
-                            child: Text('Change username'),
+                            child: Text('Edit username'),
                             color: Colors.white,
                             onPressed: () {},
                           ),
@@ -68,7 +75,14 @@ class _MyAccountPageState extends State<MyAccountPage> {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text('Email SHOWN'),
+                          Text(
+                            'EMAIL',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           RaisedButton(
                             child: Text('Change email'),
                             color: Colors.white,
@@ -96,7 +110,7 @@ class _MyAccountPageState extends State<MyAccountPage> {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text('Password SHOWN'),
+                          Text('PASSWORD'),
                           RaisedButton(
                             child: Text('Change password'),
                             color: Colors.white,

@@ -26,6 +26,7 @@ class _MyAccountPageState extends State<MyAccountPage> {
             children: <Widget>[
               Expanded(
                 child: Card(
+                  color: Colors.blueGrey,
                   child: Row(
                     children: <Widget>[
                       Container(
@@ -36,10 +37,16 @@ class _MyAccountPageState extends State<MyAccountPage> {
                           ),
                         ),
                       ),
-                      RaisedButton(
-                        child: Text('Change username'),
-                        color: Colors.white,
-                        onPressed: () {},
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text('Username SHOWN'),
+                          RaisedButton(
+                            child: Text('Change username'),
+                            color: Colors.white,
+                            onPressed: () {},
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -47,6 +54,7 @@ class _MyAccountPageState extends State<MyAccountPage> {
               ),
               Expanded(
                 child: Card(
+                  color: Colors.blueGrey,
                   child: Row(
                     children: <Widget>[
                       Container(
@@ -57,10 +65,16 @@ class _MyAccountPageState extends State<MyAccountPage> {
                           ),
                         ),
                       ),
-                      RaisedButton(
-                        child: Text('Change email'),
-                        color: Colors.white,
-                        onPressed: () {},
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text('Email SHOWN'),
+                          RaisedButton(
+                            child: Text('Change email'),
+                            color: Colors.white,
+                            onPressed: () {},
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -68,6 +82,7 @@ class _MyAccountPageState extends State<MyAccountPage> {
               ),
               Expanded(
                 child: Card(
+                  color: Colors.blueGrey,
                   child: Row(
                     children: <Widget>[
                       Container(
@@ -78,10 +93,16 @@ class _MyAccountPageState extends State<MyAccountPage> {
                           ),
                         ),
                       ),
-                      RaisedButton(
-                        child: Text('Change password'),
-                        color: Colors.white,
-                        onPressed: () {},
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text('Password SHOWN'),
+                          RaisedButton(
+                            child: Text('Change password'),
+                            color: Colors.white,
+                            onPressed: () {},
+                          ),
+                        ],
                       ),
                     ],
                   ),

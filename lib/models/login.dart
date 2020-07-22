@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   final _passwordController = TextEditingController();
 
   static const textFieldBorder = UnderlineInputBorder(
-    borderSide: BorderSide(color: Colors.yellow),
+    borderSide: BorderSide(color: Colors.black),
   );
 
   @override
@@ -46,22 +46,23 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 TextField(
-                  cursorColor: Colors.yellow,
+                  cursorColor: Colors.black,
                   controller: _usernameController,
                   decoration: InputDecoration(
                     enabledBorder: textFieldBorder,
                     focusedBorder: textFieldBorder,
                     labelText: 'Username or email',
+                    labelStyle: TextStyle(color: Colors.black),
                   ),
                 ),
                 TextField(
-                  cursorColor: Colors.yellow,
+                  cursorColor: Colors.black,
                   controller: _passwordController,
                   decoration: InputDecoration(
                     enabledBorder: textFieldBorder,
                     focusedBorder: textFieldBorder,
                     labelText: 'Password',
-                    fillColor: Colors.yellow,
+                    fillColor: Colors.black,
                   ),
                   obscureText: true,
                 ),
@@ -70,9 +71,9 @@ class _LoginPageState extends State<LoginPage> {
                     RaisedButton(
                       child: Text(
                         'Sign Up',
-                        style: TextStyle(color: Colors.grey),
+                        style: TextStyle(color: Colors.grey[400]),
                       ),
-                      color: Colors.yellow,
+                      color: Colors.black,
                       elevation: 8.0,
                       onPressed: () {
                         Navigator.push(
@@ -85,9 +86,9 @@ class _LoginPageState extends State<LoginPage> {
                     RaisedButton(
                       child: Text(
                         'Login',
-                        style: TextStyle(color: Colors.yellow),
+                        style: TextStyle(color: Colors.grey[400]),
                       ),
-                      color: Colors.grey,
+                      color: Colors.black,
                       elevation: 8.0,
                       onPressed: () {},
                     ),

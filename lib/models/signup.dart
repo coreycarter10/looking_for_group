@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/LFGAppBar.dart';
+import '../models/palette.dart' as palette;
 
 class SignupPage extends StatefulWidget {
   @override
@@ -14,13 +15,13 @@ class _SignupPageState extends State<SignupPage> {
   final _confirmPasswordController = TextEditingController();
 
   static const textFieldBorder = UnderlineInputBorder(
-    borderSide: BorderSide(color: Colors.yellow),
+    borderSide: BorderSide(color: Colors.black),
   );
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.grey[400],
       appBar: buildAppBar(context),
       body: Center(
         child: Padding(
@@ -35,7 +36,7 @@ class _SignupPageState extends State<SignupPage> {
                   child: Text(
                     'Welcome to Looking For Group!',
                     style: TextStyle(
-                      color: Colors.yellow,
+                      color: Colors.black,
                       fontWeight: FontWeight.bold,
                       fontSize: 50,
                     ),
@@ -43,7 +44,7 @@ class _SignupPageState extends State<SignupPage> {
                 ),
               ),
               TextFormField(
-                cursorColor: Colors.yellow,
+                cursorColor: palette.brass,
                 controller: _usernameController,
                 decoration: InputDecoration(
                   enabledBorder: textFieldBorder,
@@ -52,7 +53,7 @@ class _SignupPageState extends State<SignupPage> {
                 ),
               ),
               TextField(
-                cursorColor: Colors.yellow,
+                cursorColor: palette.brass,
                 controller: _emailController,
                 decoration: InputDecoration(
                   enabledBorder: textFieldBorder,
@@ -61,33 +62,33 @@ class _SignupPageState extends State<SignupPage> {
                 ),
               ),
               TextFormField(
-                cursorColor: Colors.yellow,
+                cursorColor: palette.brass,
                 controller: _passwordController,
                 decoration: InputDecoration(
                   enabledBorder: textFieldBorder,
                   focusedBorder: textFieldBorder,
                   labelText: 'Password',
-                  fillColor: Colors.yellow,
+                  fillColor: palette.brass,
                 ),
                 obscureText: true,
               ),
               TextFormField(
-                cursorColor: Colors.yellow,
+                cursorColor: palette.brass,
                 controller: _confirmPasswordController,
                 decoration: InputDecoration(
                   enabledBorder: textFieldBorder,
                   focusedBorder: textFieldBorder,
                   labelText: 'Confirm Password',
-                  fillColor: Colors.yellow,
+                  fillColor: palette.brass,
                 ),
                 obscureText: true,
               ),
               RaisedButton(
                 child: Text(
                   'Create account',
-                  style: TextStyle(color: Colors.grey),
+                  style: TextStyle(color: palette.brass),
                 ),
-                color: Colors.yellow,
+                color: Colors.black,
                 elevation: 8.0,
                 onPressed: () {},
               ),

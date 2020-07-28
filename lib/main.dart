@@ -4,7 +4,6 @@ import 'models/login.dart';
 
 void main() {
   runApp(MyApp());
-
 }
 
 class MyApp extends StatelessWidget {

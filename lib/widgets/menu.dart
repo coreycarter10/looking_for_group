@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_awesome_buttons/flutter_awesome_buttons.dart';
+import 'package:lookingforgroup/models/games.dart';
 
 import '../models/account.dart';
 import '../models/login.dart';
@@ -29,35 +30,45 @@ class NavDrawer extends StatelessWidget {
             leading: Icon(Icons.message),
             title: Text('Messages'),
             onTap: () => {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (context) => Messages(),
-              ))
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Messages(),
+                  ))
             },
           ),
           ListTile(
-            leading: RoundedButton(
-              onPressed: () {},
-              title: 'Games',
-              buttonColor: Colors.blueGrey,
-              splashColor: Colors.grey,
-            ),
-//            leading: Icon(Icons.games),
-//            title: Text('Games'),
-//            onTap: () => {Navigator.of(context).pop()},
+            leading: Icon(Icons.games),
+            title: Text('Games'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GamesPage(),
+                  ));
+            },
           ),
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('Account'),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(
-              builder: (context) => MyAccountPage(),
-            ))},
+            onTap: () => {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyAccountPage(),
+                  ))
+            },
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Logout'),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(
-              builder: (context) => LoginPage(),
-            ))},
+            onTap: () => {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LoginPage(),
+                  ))
+            },
           ),
         ],
       ),

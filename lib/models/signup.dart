@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/LFGAppBar.dart';
 import '../models/palette.dart' as palette;
+import '../widgets/LFGAppBar.dart';
 
 class SignupPage extends StatefulWidget {
   @override
@@ -32,7 +32,7 @@ class _SignupPageState extends State<SignupPage> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 100),
                 child: DecoratedBox(
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Text(
                     'Welcome to Looking For Group!',
                     style: TextStyle(
@@ -46,7 +46,7 @@ class _SignupPageState extends State<SignupPage> {
               TextFormField(
                 cursorColor: palette.brass,
                 controller: _usernameController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   enabledBorder: textFieldBorder,
                   focusedBorder: textFieldBorder,
                   labelText: 'Username',
@@ -55,7 +55,7 @@ class _SignupPageState extends State<SignupPage> {
               TextField(
                 cursorColor: palette.brass,
                 controller: _emailController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   enabledBorder: textFieldBorder,
                   focusedBorder: textFieldBorder,
                   labelText: 'Email',

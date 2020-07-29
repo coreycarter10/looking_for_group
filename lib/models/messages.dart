@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:lookingforgroup/widgets/LFGAppBar.dart';
 
+import '../widgets/LFGAppBar.dart';
 import '../widgets/chat_message.dart';
 
 class Messages extends StatefulWidget {
   final String title;
 
-  Messages({Key key, this.title}) : super(key: key);
+  const Messages({Key key, this.title}) : super(key: key);
 
   @override
   _MessagesState createState() => _MessagesState();
@@ -31,7 +31,7 @@ class _MessagesState extends State<Messages> with TickerProviderStateMixin {
               itemBuilder: (_, int index) => _messages[index],
             ),
           ),
-          Divider(height: 1),
+          const Divider(height: 1),
           _buildTextComposer(),
         ],
       ),
@@ -52,7 +52,7 @@ class _MessagesState extends State<Messages> with TickerProviderStateMixin {
               child: TextField(
                 controller: _textController,
                 onSubmitted: _handleSubmitted,
-                decoration: InputDecoration.collapsed(hintText: 'Send a message'),
+                decoration: const InputDecoration.collapsed(hintText: 'Send a message'),
               ),
             ),
             Padding(
@@ -86,6 +86,7 @@ class _MessagesState extends State<Messages> with TickerProviderStateMixin {
     msg.animCtrl.forward();
   }
 
+  @override
   void dispose() {
     for (ChatMessage msg in _messages) {
       msg.dispose();

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/LFGAppBar.dart';
 import '../models/palette.dart' as palette;
+import '../widgets/LFGAppBar.dart';
 
 class Account {
-  String username;
-  String email;
-  String password;
+  String username = 'WhiteHawkC';
+  String email = 'corey-carter@hotmail.com';
+  String password = 'Hello';
 }
 
 class MyAccountPage extends StatefulWidget {
@@ -49,7 +49,7 @@ class _MyAccountPageState extends State<MyAccountPage> {
                             ),
                           ),
                           RaisedButton(
-                            child: Text('Edit username'),
+                            child: const Text('Edit username'),
                             color: Colors.white,
                             onPressed: () {},
                           ),
@@ -84,7 +84,7 @@ class _MyAccountPageState extends State<MyAccountPage> {
                             ),
                           ),
                           RaisedButton(
-                            child: Text('Change email'),
+                            child: const Text('Change email'),
                             color: Colors.white,
                             onPressed: () {},
                           ),
@@ -110,9 +110,9 @@ class _MyAccountPageState extends State<MyAccountPage> {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text('PASSWORD'),
+                          const Text('PASSWORD'),
                           RaisedButton(
-                            child: Text('Change password'),
+                            child: const Text('Change password'),
                             color: Colors.white,
                             onPressed: () {},
                           ),

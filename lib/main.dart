@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(title: 'Looking For Group'),
+      home: const HomePage(title: 'Looking For Group'),
     );
   }
 }
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatefulWidget {
   final String title;
 
-  HomePage({Key key, this.title}) : super(key: key);
+  const HomePage({Key key, this.title}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../models/account.dart';
-import 'menu.dart';
 import '../models/palette.dart' as palette;
 
 AppBar buildAppBar(BuildContext context) {

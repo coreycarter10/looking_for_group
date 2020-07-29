@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../models/signup.dart';
-import '../models/palette.dart' as palette;
 import '../widgets/LFGAppBar.dart';
 import '../widgets/menu.dart';
 
@@ -48,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                 TextField(
                   cursorColor: Colors.black,
                   controller: _usernameController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     enabledBorder: textFieldBorder,
                     focusedBorder: textFieldBorder,
                     labelText: 'Username or email',
@@ -58,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                 TextField(
                   cursorColor: Colors.black,
                   controller: _passwordController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     enabledBorder: textFieldBorder,
                     focusedBorder: textFieldBorder,
                     labelText: 'Password',

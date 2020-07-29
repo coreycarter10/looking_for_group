@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_awesome_buttons/flutter_awesome_buttons.dart';
-import 'package:lookingforgroup/models/games.dart';
-
 import '../models/account.dart';
+import '../models/games.dart';
 import '../models/login.dart';
 import '../models/messages.dart';
 import '../models/palette.dart' as palette;
@@ -22,24 +20,24 @@ class NavDrawer extends StatelessWidget {
             ),
             decoration: BoxDecoration(
                 color: palette.brass,
-                image: DecorationImage(
+                image: const DecorationImage(
                     fit: BoxFit.fill,
                     image: AssetImage('assets/images/cover.jpg'))),
           ),
           ListTile(
             leading: Icon(Icons.message),
-            title: Text('Messages'),
+            title: const Text('Messages'),
             onTap: () => {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Messages(),
+                    builder: (context) => const Messages(),
                   ))
             },
           ),
           ListTile(
             leading: Icon(Icons.games),
-            title: Text('Games'),
+            title: const Text('Games'),
             onTap: () {
               Navigator.push(
                   context,
@@ -50,7 +48,7 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.settings),
-            title: Text('Account'),
+            title: const Text('Account'),
             onTap: () => {
               Navigator.push(
                   context,
@@ -61,7 +59,7 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),
-            title: Text('Logout'),
+            title: const Text('Logout'),
             onTap: () => {
               Navigator.push(
                   context,
